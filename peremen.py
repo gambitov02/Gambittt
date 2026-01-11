@@ -20,6 +20,7 @@ DESCRIPTION = "Мама твоя"
 
 # ===== База =====
 DB_PATH = "bot.db"
+DATABASE_URL = "postgresql://postgres_03vn_user:QqHAvJLpq1Y8jyuwEEzt7fvEze85YVdT@dpg-d5hqjafgi27c7385bpug-a/postgres_03vn"
 
 # (опционально) контакт поддержки
 SUPPORT_TEXT = "Если есть проблема с оплатой/доступом — напиши администратору."
