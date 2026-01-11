@@ -28,7 +28,13 @@ from peremen import (
     DB_PATH,
     SUPPORT_TEXT,
 )
+import os
+import psycopg2
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+def db_connect():
+    return psycopg2.connect(DATABASE_URL, sslmode="require")
 # ---------------- SQLite ----------------
 def db_connect() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
